@@ -3,14 +3,22 @@ import PricingCard from "../components/PricingCard";
 
 const Hero = () => {
   return (
-    <div className="w-full flex justify-center items-center bg-gray/10 !mt-16">
-      <div className="w-full max-w-[1440px] mx-auto pt-23 pb-13 flex flex-col justify-center items-center gap-5">
-        <p className="max-w-[1107px] text-5xl font-bold tracking-tight leading-19">
+    <div className="w-full flex justify-center items-center bg-gray/10 sm:!mt-16 !mt-7">
+      <div className="w-full max-w-[1440px] mx-auto pt-23 pb-13 flex flex-col justify-center items-center gap-5 px-5">
+        <p className="hidden xl:block max-w-[1107px] 2xl:text-5xl text-5xl font-bold tracking-tight leading-19">
           Convert More Visitors With The Popup Builder 500,000+ Websites Use
         </p>
-        <div className="flex justify-cenetr items-center gap-5 text-lg font-bold !mb-9">
-          <p>Monthly</p>
-          <Switch defaultChecked/>
+        <p className="xl:hidden md:block hidden max-w-[1107px] 2xl:text-5xl text-5xl font-bold tracking-tight leading-19">
+          Convert More Visitors With The <br />Popup Builder <br />500,000+ Websites Use
+        </p>
+        <p className="md:hidden max-w-[1107px] text-2xl font-bold tracking-tight leading-10">
+          Convert More Visitors With The Popup Builder
+          <br />
+          500,000+ Websites Use
+        </p>
+        <div className="flex justify-cenetr items-center gap-5 text-lg font-semibold !mb-9">
+          <p className="text-lightGray opacity-80">Monthly</p>
+          <Switch defaultChecked />
           <p>Annually</p>
         </div>
 

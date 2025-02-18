@@ -5,7 +5,7 @@ export const pricingList = [
       benefits: [
         {
           description: "Up to",
-          highlighted: "150,000 sessions/mo",
+          highlighted: "500,000 sessions/mo",
           isHighlight: "true",
         },
         {
@@ -13,7 +13,7 @@ export const pricingList = [
         },
         {
           description:
-            "Advanced-level support, design features, and integrations",
+            "Premium-level support, design features, and integrations",
         },
       ],
     },
@@ -31,7 +31,7 @@ export const pricingList = [
         },
         {
           description:
-            "Advanced-level support, design features, and integrations",
+            "Premium-level support, design features, and integrations",
         },
       ],
     },
@@ -41,7 +41,7 @@ export const pricingList = [
       benefits: [
         {
           description: "Up to",
-          highlighted: "150,000 sessions/mo",
+          highlighted: "50,000 sessions/mo",
           isHighlight: "true",
         },
         {
@@ -60,15 +60,15 @@ export const pricingList = [
       benefits: [
         {
           description: "Up to",
-          highlighted: "150,000 sessions/mo",
+          highlighted: "5,000 sessions/mo",
           isHighlight: "true",
         },
         {
-          description: "Unlimited number of popups, subscribers, and A/B tests",
+          description: "Limit of 10 popups, 1 live test, and unlimited number of subscribers",
         },
         {
           description:
-            "Advanced-level support, design features, and integrations",
+            "Basic-level support, design features, and integrations",
         },
       ],
     },

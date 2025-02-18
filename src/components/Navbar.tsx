@@ -8,7 +8,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full flex justify-center items-center bg-white shadow-lg shadow-gray-300/30 z-10">
+    <nav className="fixed top-0 w-full flex justify-center items-center bg-white shadow-lg shadow-gray-300/30 z-30">
       <div className="relative w-full max-w-[1440px] mx-auto h-[72px] flex justify-between items-center px-5">
         <div className="text-xl font-bold border-2 px-3 py-2">Company Logo</div>
 
