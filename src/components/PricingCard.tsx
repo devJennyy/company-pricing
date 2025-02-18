@@ -4,7 +4,7 @@ import { pricingList } from "../constants/PricingData";
 
 const PricingCard = () => {
   return (
-    <div className="flex gap-[3px]">
+    <div className="flex 2xl:flex-row flex-col gap-[3px]">
       {pricingList?.map((items, index) => {
         return (
           <div

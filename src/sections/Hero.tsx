@@ -10,7 +10,7 @@ const Hero = () => {
         </p>
         <div className="flex justify-cenetr items-center gap-5 text-lg font-bold !mb-9">
           <p>Monthly</p>
-          <Switch />
+          <Switch defaultChecked/>
           <p>Annually</p>
         </div>
 
