@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FaCheck } from "react-icons/fa";
 import { LuChevronDown } from "react-icons/lu";
 import { pricingList } from "../constants/PricingData";
+import SharedButton from "./SharedButton";
 
 const PricingCard = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -17,6 +18,7 @@ const PricingCard = () => {
               hoveredIndex === index ? "20" : "0"
             } relative w-full xl:max-w-[310px] flex xl:flex-col md:flex-row flex-col xl:justify-start md:justify-between justify-start md:items-center xl:gap-6 md:gap-0 gap-6 md:shadow-xl shadow-sm xl:p-7 md:p-0 p-5 bg-white cursor-pointer`}
             whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 1.05 }}
             transition={{ stiffness: 400, damping: 15 }}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -74,11 +76,7 @@ const PricingCard = () => {
             </div>
 
             <div className="xl:w-full md:w-[202px] xl:p-0 md:p-5 flex flex-col justify-center items-center xl:gap-6 md:gap-3 gap-6">
-              <button className="w-full h-12 flex justify-center items-center bg-brand !mt-1 cursor-pointer rounded-sm">
-                <p className="text-white text-[15px] font-medium">
-                  Get Started
-                </p>
-              </button>
+              <SharedButton/>
               <button className="flex justify-center items-center gap-1 text-darkGray cursor-pointer">
                 <p className="capitalize text-sm">See all features</p>
                 <LuChevronDown size={20} />

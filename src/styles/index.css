@@ -155,3 +155,9 @@ html > body[data-scroll-locked] {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .transition-default {
+    @apply transition-all duration-300 ease-out;
+  }
+}

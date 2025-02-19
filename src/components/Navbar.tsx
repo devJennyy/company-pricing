@@ -22,7 +22,7 @@ const Navbar = () => {
                 <button
                   className={`text-lg cursor-pointer hover:text-gray transition-colors duration-200 ease-out ${
                     classType
-                      ? `border border-brand hover:bg-brand hover:text-white transition-all duration-300 ease-out rounded-sm px-11 py-2`
+                      ? `border border-brand hover:bg-brand hover:text-white transition-default rounded-sm px-11 py-2`
                       : ""
                   } ${isSelected ? "text-gray" : ""}`}
                 >
@@ -75,7 +75,7 @@ const Navbar = () => {
                         <button
                           className={`sm:text-xl text-lg font-semibold cursor-pointer hover:text-brand transition-colors duration-200 ease-out ${
                             classType
-                              ? `bg-brand hover:bg-brand text-white hover:text-brand transition-all duration-300 ease-out rounded-sm px-11 py-2`
+                              ? `bg-brand hover:bg-brand text-white hover:text-brand transition-default rounded-sm px-11 py-2`
                               : ""
                           } ${isSelected ? "text-brand" : ""}`}
                         >
