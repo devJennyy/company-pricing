@@ -73,11 +73,11 @@ const Navbar = () => {
                     return (
                       <li key={label}>
                         <button
-                          className={`sm:text-xl text-lg font-semibold cursor-pointer hover:text-brand transition-colors duration-200 ease-out ${
+                          className={`sm:text-xl text-lg font-semibold cursor-pointer active:text-brand transition-colors duration-200 ease-out ${
                             classType
-                              ? `bg-brand hover:bg-brand text-white hover:text-brand transition-default rounded-sm px-11 py-2`
+                              ? `bg-brand active:bg-white focus:bg-white border border-brand text-white active:text-brand transition-default rounded-sm px-11 py-2`
                               : ""
-                          } ${isSelected ? "text-brand" : ""}`}
+                          } ${isSelected ? "text-brand transition-default" : ""}`}
                         >
                           {label}
                         </button>
