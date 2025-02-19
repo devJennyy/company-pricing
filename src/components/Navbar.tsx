@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full flex justify-center items-center bg-white shadow-lg shadow-gray-300/30 z-30">
       <div className="relative w-full max-w-[1440px] mx-auto h-[72px] flex justify-between items-center px-5">
         <div className="w-24">
-          <img src="/logo.svg" alt="sample logo" className="w-full h-full object-contain"/>
+          <img src="/logo/logo.svg" alt="sample logo" className="w-full h-full object-contain"/>
         </div>
 
         {/* Web Menu */}
