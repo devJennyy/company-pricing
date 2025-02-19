@@ -228,6 +228,76 @@ export const pricingList = [
           },
         ],
       },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: true,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -317,7 +387,77 @@ export const pricingList = [
             hasHeader: true,
             listItems: [
               {
-                label: "Advanced",
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: true,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
                 hasIcon: false,
                 customClass: "justify-center",
               },
@@ -423,6 +563,76 @@ export const pricingList = [
           },
         ],
       },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: true,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -515,6 +725,76 @@ export const pricingList = [
             listItems: [
               {
                 label: "No",
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: false,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: false,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: false,
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: true,
+            listItems: [
+              {
+                label: "Basic",
+                hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                checkIcon: true,
                 hasIcon: false,
                 customClass: "justify-center",
               },

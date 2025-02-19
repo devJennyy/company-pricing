@@ -1,5 +1,7 @@
 import { pricingList } from "@/constants/PricingData";
 import { BsQuestionCircle } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
+import { PiCheckBold } from "react-icons/pi";
 
 const BenefitList = () => {
   return (
@@ -36,17 +38,30 @@ const BenefitList = () => {
                               key={index}
                               className={`w-full h-14 flex ${item.customClass} items-center gap-2 border-b border-black/10`}
                             >
-                              <p className="text-sm">
-                                {"highlightedText" in item ? (
+                              <p className="text-sm flex items-center gap-2">
+                                {"highlightedText" in item &&
+                                "label" in item ? (
                                   <>
                                     <span className="font-bold">
                                       {item.highlightedText}
-                                    </span>
+                                    </span>{" "}
                                     {item.label}
                                   </>
-                                ) : (
+                                ) : "label" in item ? (
                                   item.label
-                                )}
+                                ) : "checkIcon" in item ? (
+                                  item.checkIcon ? (
+                                    <PiCheckBold
+                                      size={18}
+                                      className="text-brand"
+                                    />
+                                  ) : (
+                                    <IoClose
+                                      size={20}
+                                      className="text-lightGray"
+                                    />
+                                  )
+                                ) : null}
                               </p>
 
                               {item.hasIcon ? (
