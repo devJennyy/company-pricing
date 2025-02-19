@@ -76,7 +76,7 @@ const PricingCard = () => {
             </div>
 
             <div className="xl:w-full md:w-[202px] xl:p-0 md:p-5 flex flex-col justify-center items-center xl:gap-6 md:gap-3 gap-6">
-              <SharedButton/>
+              <SharedButton />
               <button className="flex justify-center items-center gap-1 text-darkGray cursor-pointer">
                 <p className="capitalize text-sm">See all features</p>
                 <LuChevronDown size={20} />
