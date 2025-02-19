@@ -4,7 +4,7 @@ import SharedButton from "./SharedButton";
 const Footer = () => {
   return (
     <footer className="w-full flex flex-col justify-center items-center bg-primaryFill">
-      <div className="max-w-[1440px] mx-auto md:py-28 sm:py-20 py-16 px-10">
+      <div className="max-w-[1440px] mx-auto md:py-28 sm:py-20 py-10 px-5">
         <div className="md:w-[650px] w-full flex flex-col gap-7">
           <p className="text-2xl font-bold">
             Start Building Your Email List in Just 5 Minutes
@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="w-full sm:h-12 flex sm:flex-row flex-col justify-center items-center gap-3">
             <input
               placeholder="Enter your website URL"
-              className="md:w-[200%] sm:w-[160%] w-full h-12 font-medium border outline-none pl-5 rounded-sm !mt-1"
+              className="md:w-[200%] sm:w-[160%] w-full h-12 sm:font-medium sm:text-[16px] text-sm border outline-none pl-5 rounded-sm !mt-1"
             />
             <SharedButton type={"secondary"} hasIcon={true} />
           </div>
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full xl:h-12 flex justify-center items-center bg-brand">
-        <div className="sm:hidden w-full max-w-[1440px] xl:flex lg:flex-row flex-col justify-between items-center px-16">
+        <div className="sm:hidden w-full max-w-[1440px] xl:flex lg:flex-row flex flex-col justify-between items-center px-16 sm:py-0 py-7">
           {footerLinks?.map((item, index) => {
             return (
               <button
