@@ -75,7 +75,7 @@ const Navbar = () => {
                         <button
                           className={`sm:text-xl text-lg font-semibold cursor-pointer active:text-brand transition-colors duration-200 ease-out ${
                             classType
-                              ? `bg-brand active:bg-white focus:bg-white border border-brand text-white active:text-brand transition-default rounded-sm px-11 py-2`
+                              ? `bg-brand active:bg-white focus:bg-white border border-brand text-white active:text-brand focus:text-brand transition-default rounded-sm px-11 py-2`
                               : ""
                           } ${isSelected ? "text-brand transition-default" : ""}`}
                         >
