@@ -163,3 +163,23 @@ html > body[data-scroll-locked] {
     @apply transition-all duration-300 ease-out;
   }
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.swiper-pagination {
+  display: flex;
+  margin-bottom: 3px;
+  width: 0;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  width: fit-content;
+}
