@@ -27,7 +27,7 @@ const PricingCard = () => {
               {/* "Most Popular" Badge Animation*/}
               {hoveredIndex === index && (
                 <motion.div
-                  className="xl:absolute xl:top-[-0.7rem] md:relative absolute top-[-0.7rem] px-2 py-[2px] bg-brand"
+                  className="xl:absolute xl:top-[-0.7rem] md:relative absolute top-[-0.7rem] px-2 py-[2px] bg-brand rounded-[2px]"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}

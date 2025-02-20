@@ -151,6 +151,22 @@ export const featuredBenefit = [
           },
         ],
       },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                height: true,
+                hasButton: true,
+                hasIcon: false,
+                hasNoBorderB: true,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -299,6 +315,22 @@ export const featuredBenefit = [
               {
                 checkIcon: true,
                 hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                height: true,
+                hasButton: true,
+                hasIcon: false,
+                hasNoBorderB: true,
                 customClass: "justify-center",
               },
             ],
@@ -459,6 +491,22 @@ export const featuredBenefit = [
           },
         ],
       },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                height: true,
+                hasButton: true,
+                hasIcon: false,
+                hasNoBorderB: true,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -608,6 +656,22 @@ export const featuredBenefit = [
               {
                 checkIcon: true,
                 hasIcon: false,
+                customClass: "justify-center",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        table: [
+          {
+            hasHeader: false,
+            listItems: [
+              {
+                height: true,
+                hasButton: true,
+                hasIcon: false,
+                hasNoBorderB: true,
                 customClass: "justify-center",
               },
             ],

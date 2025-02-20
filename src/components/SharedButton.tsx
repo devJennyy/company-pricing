@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const SharedButton = ({ type = 'primary', hasIcon }: ButtonProps) => {
   const baseStyles =
-    'w-full h-12 flex justify-center items-center border border-brand bg-brand !mt-1 cursor-pointer rounded-sm hover:bg-white active:bg-white focus:bg-white text-white hover:text-brand active:text-brand focus:text-brand transition-default';
+    'w-full h-12 flex justify-center items-center border border-brand bg-brand !mt-1 cursor-pointer rounded-[2px] hover:bg-white active:bg-white focus:bg-white text-white hover:text-brand active:text-brand focus:text-brand transition-default';
   const label = {
     primary: 'Get Started',
     secondary: 'Get Started Now',

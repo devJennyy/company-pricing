@@ -15,8 +15,8 @@ const FeaturesAndBenefits = () => {
           <p>Annually</p>
         </div>
 
-        <div className="w-full flex items-end">
-          <div className="w-[481px] flex-col">
+        <div className="w-full flex justify-between items-end">
+          <div className="xl:w-[300px] md:block hidden w-full flex-col">
             {/* Table 1 */}
             <div className="w-full">
               {/* Header Section */}
@@ -127,6 +127,7 @@ const FeaturesAndBenefits = () => {
                 <p className="text-sm">Zapier integrations</p>
                 <BsQuestionCircle className="text-gray-500" />
               </div>
+              <div className="w-full h-20"></div>
             </div>
           </div>
           <BenefitList />

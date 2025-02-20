@@ -3,4 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  --swiper-theme-color: #27AB9E;
+  --swiper-navigation-size: 20px;
 }
