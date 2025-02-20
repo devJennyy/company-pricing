@@ -40,10 +40,10 @@ const PricingCard = () => {
               )}
               <div className="w-full flex xl:justify-between md:justify-center justify-between items-center md:flex-col">
                 <p className="text-[2rem]">{items.label}</p>
-                <p className="text-xl font-medium">
-                  {items.price}
+                <p className="text-xl font-semibold">
+                ${items.price}
                   <span
-                    className={`text-lg font-regular ${
+                    className={`text-lg font-medium ${
                       items.isFree ? `!ml-1 text-brand` : ``
                     }`}
                   >

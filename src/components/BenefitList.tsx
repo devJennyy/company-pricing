@@ -1,4 +1,4 @@
-import { pricingList } from "@/constants/PricingData";
+import { featuredBenefit } from "@/constants/featuredBenefitData";
 import { BsQuestionCircle } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { PiCheckBold } from "react-icons/pi";
@@ -6,15 +6,25 @@ import { PiCheckBold } from "react-icons/pi";
 const BenefitList = () => {
   return (
     <div className="w-full grid grid-cols-5">
-      {pricingList?.map((item, index) => {
+      {featuredBenefit?.map((item, index) => {
         return (
           <div key={index} className="w-full">
             <div className="flex flex-col justify-center items-center p-4">
-              <p className="text-[26px]">{item.label}</p>
-              <p className="text-lg font-bold">
-                ${item.price}
-                <span className="text-sm">/mo*</span>
+              <p className="text-[26px]">
+                {"label" in item ? item.label : "\u00A0"}
               </p>
+
+              {"price" in item ? (
+                <p className="text-lg font-bold">
+                  ${item.price}
+                  <span className="text-sm">/mo*</span>
+                </p>
+              ) : (
+                <p className="text-lg font-bold">
+                  &nbsp;
+                  <span className="text-sm">&nbsp;</span>
+                </p>
+              )}
             </div>
             {item?.tableList?.map((list, index) => {
               return (
