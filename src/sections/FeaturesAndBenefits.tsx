@@ -7,7 +7,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import SharedButton from "@/components/SharedButton";
 
 const FeaturesAndBenefits = () => {
   return (
