@@ -188,16 +188,15 @@ html > body[data-scroll-locked] {
 
 .swiper-button-next,
 .swiper-button-prev {
-  top: 3rem !important;
+  top: 4rem !important;
   transform: scale(1.5) !important;
 }
 
-/* Reduce scale on small screens */
 @media (max-width: 640px) { 
   .swiper-button-next,
   .swiper-button-prev {
     transform: scale(1.1) !important; 
-    top: 4rem !important;
+    top: 5rem !important;
   }
 }
 

@@ -1,5 +1,6 @@
 export const pricingList = [
   {
+    badge: "Ultimate Package",
     label: "Elite",
     price: "83",
     benefits: [
@@ -14,9 +15,10 @@ export const pricingList = [
       {
         description: "Premium-level support, design features, and integrations",
       },
-    ]
+    ],
   },
   {
+    badge: "Most Popular",
     label: "Premium",
     price: "41",
     benefits: [
@@ -31,9 +33,10 @@ export const pricingList = [
       {
         description: "Premium-level support, design features, and integrations",
       },
-    ]
+    ],
   },
   {
+    badge: "Best Value",
     label: "Growth",
     price: "24",
     benefits: [
@@ -49,9 +52,10 @@ export const pricingList = [
         description:
           "Advanced-level support, design features, and integrations",
       },
-    ]
+    ],
   },
   {
+    badge: "Best for Beginners",
     label: "Starter",
     price: "0",
     isFree: "true",
@@ -68,6 +72,6 @@ export const pricingList = [
       {
         description: "Basic-level support, design features, and integrations",
       },
-    ]
+    ],
   },
 ];

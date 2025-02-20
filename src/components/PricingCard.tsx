@@ -10,7 +10,7 @@ const PricingCard = () => {
 
   return (
     <div className="flex xl:flex-row flex-col xl:gap-[3px] md:gap-[1px] gap-7">
-      {pricingList?.map((items, index) => {
+      {pricingList?.map((item, index) => {
         return (
           <motion.div
             key={index}
@@ -24,7 +24,7 @@ const PricingCard = () => {
             onMouseLeave={() => setHoveredIndex(null)}
           >
             <div className="md:w-[202px] flex justify-center items-center md:flex-col">
-              {/* "Most Popular" Badge Animation*/}
+              {/* Badge */}
               {hoveredIndex === index && (
                 <motion.div
                   className="xl:absolute xl:top-[-0.7rem] md:relative absolute top-[-0.7rem] px-2 py-[2px] bg-brand rounded-[2px]"
@@ -34,20 +34,20 @@ const PricingCard = () => {
                   transition={{ duration: 0.2, ease: "easeOut" }}
                 >
                   <p className="uppercase text-white xl:text-sm md:text-[12px] text-sm font-medium">
-                    Most Popular
+                    {item.badge}
                   </p>
                 </motion.div>
               )}
               <div className="w-full flex xl:justify-between md:justify-center justify-between items-center md:flex-col">
-                <p className="text-[2rem]">{items.label}</p>
+                <p className="text-[2rem]">{item.label}</p>
                 <p className="text-xl font-semibold">
-                ${items.price}
+                  ${item.price}
                   <span
                     className={`text-lg font-medium ${
-                      items.isFree ? `!ml-1 text-brand` : ``
+                      item.isFree ? `!ml-1 text-brand` : ``
                     }`}
                   >
-                    {items.isFree ? `Free Forever` : `/mo*`}
+                    {item.isFree ? `Free Forever` : `/mo*`}
                   </span>
                 </p>
               </div>
@@ -56,7 +56,7 @@ const PricingCard = () => {
             <div className="xl:block md:hidden w-full h-[1px] bg-stroke"></div>
 
             <div className="xl:w-fit md:w-[290px] flex flex-col gap-4 xl:border-0 md:border-x border-stroke xl:px-0 xl:py-0 md:px-5 md:py-6">
-              {items?.benefits?.map((benefit, benefitIndex) => {
+              {item?.benefits?.map((benefit, benefitIndex) => {
                 return (
                   <div key={benefitIndex} className="flex gap-2">
                     <div className="w-full !max-w-4 !h-4 flex justify-center items-center rounded-sm bg-brand !mt-[2px]">

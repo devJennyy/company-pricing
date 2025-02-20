@@ -35,8 +35,8 @@ const BenefitList = () => {
                 animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 5 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="uppercase text-white xl:text-sm md:text-[12px] text-sm font-medium">
-                  Most Popular
+                <p className="uppercase text-white xl:text-sm md:text-[12px] text-sm font-medium whitespace-nowrap">
+                  {item.badge}
                 </p>
               </motion.div>
 
@@ -130,12 +130,7 @@ const BenefitList = () => {
           );
         })}
       </div>
-      <div className="absolute right-0 md:px-0 sm:px-10 px-4 md:w-[400px] w-full xl:hidden md:bg-white md:drop-shadow-[6px_0_10px_rgba(0,0,0,0.1)] md:relative overflow-visible z-0">
-        <div className="w-fit xl:absolute xl:top-[-0.7rem] absolute top-[-0.7rem] left-1/2 -translate-x-1/2 px-2 py-[2px] bg-brand z-10 rounded-[2px]">
-          <p className="uppercase text-white xl:text-sm md:text-[12px] text-sm font-medium">
-            Most Popular
-          </p>
-        </div>
+      <div className="absolute right-0 md:px-0 sm:px-10 px-4 md:w-[400px] w-full xl:hidden md:drop-shadow-[6px_0_10px_rgba(0,0,0,0.1)] md:relative overflow-visible z-10">
         <Swiper
           effect="slide"
           navigation={true}
@@ -147,10 +142,15 @@ const BenefitList = () => {
           {featuredBenefit?.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <div className="md:relative w-full !mt-3">
-                  <div className="flex flex-col justify-center items-center p-4">
+                <div className="w-fit absolute overflow-visible left-1/2 -translate-x-1/2 px-2 py-[2px] bg-brand z-10 rounded-[2px]">
+                  <p className="uppercase text-white xl:text-sm md:text-[12px] text-sm font-medium">
+                    {item.badge}
+                  </p>
+                </div>
+                <div className="md:relative w-full md:!mt-3 !mt-7 md:bg-white ">
+                  <div className="flex flex-col justify-center items-center md:p-5 p-4">
                     <p
-                      className={`text-[26px] ${
+                      className={`text-[26px] leading-tight md:!mt-1 ${
                         activeIndex === index ? "text-brand" : ""
                       }`}
                     >

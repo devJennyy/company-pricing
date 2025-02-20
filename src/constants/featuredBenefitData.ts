@@ -1,5 +1,6 @@
 export const featuredBenefit = [
   {
+    badge: "Ultimate Package",
     label: "Elite",
     price: "83",
     tableList: [
@@ -170,6 +171,7 @@ export const featuredBenefit = [
     ],
   },
   {
+    badge: "Most Popular",
     label: "Premium",
     price: "41",
     tableList: [
@@ -340,6 +342,7 @@ export const featuredBenefit = [
     ],
   },
   {
+    badge: "Best Value",
     label: "Growth",
     price: "24",
     tableList: [
@@ -510,6 +513,7 @@ export const featuredBenefit = [
     ],
   },
   {
+    badge: "Best for Beginners",
     label: "Starter",
     price: "0",
     isFree: "true",
