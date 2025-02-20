@@ -1,6 +1,13 @@
 import BenefitList from "@/components/BenefitList";
 import { Switch } from "@/components/ui/switch";
 import { BsQuestionCircle } from "react-icons/bs";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import SharedButton from "@/components/SharedButton";
 
 const FeaturesAndBenefits = () => {
   return (
@@ -29,19 +36,56 @@ const FeaturesAndBenefits = () => {
               {/* Content Section */}
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Views</p>
-                <BsQuestionCircle className="text-gray-500" />
+
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Number of popups</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Number of subscribers</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Number of seats</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
             </div>
 
@@ -57,7 +101,16 @@ const FeaturesAndBenefits = () => {
               {/* Content Section */}
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Technical support</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
             </div>
 
@@ -73,11 +126,29 @@ const FeaturesAndBenefits = () => {
               {/* Content Section */}
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">A/B testing</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Targeting</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
             </div>
 
@@ -93,19 +164,55 @@ const FeaturesAndBenefits = () => {
               {/* Content Section */}
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Content upgrades</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Custom Thank You page</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Yes/No questions</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Remove HB logo</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
             </div>
 
@@ -121,11 +228,29 @@ const FeaturesAndBenefits = () => {
               {/* Content Section */}
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Email integrations</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-14 flex items-center gap-2 border-b border-black/10 px-4">
                 <p className="text-sm">Zapier integrations</p>
-                <BsQuestionCircle className="text-gray-500" />
+                <TooltipProvider delayDuration={0}>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <BsQuestionCircle className="text-gray-500 cursor-pointer z-50" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>This is a sample.</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="w-full h-20"></div>
             </div>

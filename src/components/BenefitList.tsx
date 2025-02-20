@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import SharedButton from "./SharedButton";
 
+
 const BenefitList = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -108,10 +109,11 @@ const BenefitList = () => {
                           </p>
 
                           {listItem.hasIcon ? (
-                            <BsQuestionCircle />
+                            "<BsQuestionCircle />"
                           ) : (
                             <div> </div>
                           )}
+
 
                           {"hasButton" in listItem ? (
                             <div className="w-full !mr-4 overflow-visible z-20">
@@ -130,7 +132,7 @@ const BenefitList = () => {
           );
         })}
       </div>
-      <div className="absolute right-0 md:px-0 sm:px-10 px-4 md:w-[400px] w-full xl:hidden md:drop-shadow-[6px_0_10px_rgba(0,0,0,0.1)] md:relative overflow-visible z-10">
+      <div className="absolute right-0 md:px-0 sm:px-10 px-4 md:w-[400px] w-full xl:hidden md:drop-shadow-[6px_0_10px_rgba(0,0,0,0.1)] md:relative overflow-visible">
         <Swiper
           effect="slide"
           navigation={true}
