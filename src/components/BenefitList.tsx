@@ -130,7 +130,7 @@ const BenefitList = () => {
           );
         })}
       </div>
-      <div className="md:w-[400px] w-full xl:hidden bg-white md:drop-shadow-[6px_0_10px_rgba(0,0,0,0.1)] relative overflow-visible">
+      <div className="absolute right-0 md:px-0 sm:px-10 px-4 md:w-[400px] w-full xl:hidden md:bg-white md:drop-shadow-[6px_0_10px_rgba(0,0,0,0.1)] md:relative overflow-visible z-0">
         <div className="w-fit xl:absolute xl:top-[-0.7rem] absolute top-[-0.7rem] left-1/2 -translate-x-1/2 px-2 py-[2px] bg-brand z-10 rounded-[2px]">
           <p className="uppercase text-white xl:text-sm md:text-[12px] text-sm font-medium">
             Most Popular
@@ -147,7 +147,7 @@ const BenefitList = () => {
           {featuredBenefit?.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <div className="relative w-full !mt-3">
+                <div className="md:relative w-full !mt-3">
                   <div className="flex flex-col justify-center items-center p-4">
                     <p
                       className={`text-[26px] ${
@@ -196,7 +196,9 @@ const BenefitList = () => {
                                     className={`w-full ${
                                       "height" in item ? "h-20" : "h-14"
                                     } flex ${
-                                      item.customClass
+                                      item.customClass ? "justify-end" : ""
+                                    } md:${
+                                      item.customClass ?? "justify-end"
                                     } items-center gap-2 ${
                                       "hasNoBorderB" in item ? "" : "border-b"
                                     } border-black/10`}
@@ -234,7 +236,7 @@ const BenefitList = () => {
                                     )}
 
                                     {"hasButton" in item ? (
-                                      <div className="w-full !mr-4 overflow-visible z-20">
+                                      <div className="w-full !mr-4 md:px-0 sm:px-32 px-10 overflow-visible z-20">
                                         <SharedButton />
                                       </div>
                                     ) : (

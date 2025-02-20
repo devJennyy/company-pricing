@@ -5,18 +5,18 @@ import { BsQuestionCircle } from "react-icons/bs";
 const FeaturesAndBenefits = () => {
   return (
     <div className="w-full flex justify-center items-center bg-primaryFill sm:!mt-16 !mt-7">
-      <div className="w-full max-w-[1440px] mx-auto pt-23 pb-13 flex flex-col justify-center items-center gap-5 px-5">
+      <div className="w-full max-w-[1440px] mx-auto pt-16 pb-13 flex flex-col justify-center items-center gap-5 sm:px-8 px-4">
         <p className="md:text-[40px] text-2xl font-bold tracking-tight md:leading-16 leading-10 lg:px-0 md:px-10 sm:px-24">
           Detailed List Of Hello Bar Features And Benefits
         </p>
-        <div className="flex justify-center items-center gap-5 text-lg font-semibold !mb-9">
+        <div className="flex justify-center items-center gap-5 text-lg font-semibold md:!mb-9 !mb-36">
           <p className="text-lightGray opacity-80">Monthly</p>
           <Switch defaultChecked />
           <p>Annually</p>
         </div>
 
         <div className="w-full flex justify-between items-end">
-          <div className="xl:w-[300px] md:block hidden w-full flex-col">
+          <div className="xl:w-[300px] w-full flex-col z-10">
             {/* Table 1 */}
             <div className="w-full">
               {/* Header Section */}
