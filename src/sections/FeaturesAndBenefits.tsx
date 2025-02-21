@@ -22,7 +22,7 @@ const FeaturesAndBenefits = () => {
         </div>
 
         <div className="w-full flex justify-between items-end">
-          <div className="xl:w-[300px] w-full flex-col z-10">
+          <div className="xl:w-[300px] w-full flex-col z-0">
             {/* Table 1 */}
             <div className="w-full">
               {/* Header Section */}
