@@ -19,7 +19,14 @@ const PricingCard = () => {
             } sm:border-none border border-white focus:border-brand active:border-brand transition-default relative w-full xl:max-w-[310px] flex xl:flex-col md:flex-row flex-col xl:justify-start md:justify-between justify-start md:items-center xl:gap-6 md:gap-0 gap-6 md:shadow-xl shadow-sm xl:p-7 md:p-0 p-5 bg-white cursor-pointer`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 1.05 }}
-            transition={{ stiffness: 400, damping: 15 }}
+            initial={{ y: 150, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              type: "spring",
+              bounce: 0.4,
+              duration: 0.9,
+              delay: index * 0.1,
+            }}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
