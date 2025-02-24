@@ -4,11 +4,9 @@ import { FaCheck } from "react-icons/fa";
 import { LuChevronDown } from "react-icons/lu";
 import { pricingList } from "../constants/PricingData";
 import SharedButton from "./SharedButton";
-import useDeviceType from "@/hooks/useDeviceType";
 
 const PricingCard = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const { isMobile, isTablet } = useDeviceType();
 
   return (
     <div className="flex xl:flex-row flex-col xl:gap-[3px] md:gap-[1px] gap-7">
@@ -19,18 +17,6 @@ const PricingCard = () => {
             className={`z-${
               hoveredIndex === index ? "20" : "0"
             } sm:border-none border border-white focus:border-brand active:border-brand transition-default relative w-full xl:max-w-[310px] flex xl:flex-col md:flex-row flex-col xl:justify-start md:justify-between justify-start md:items-center xl:gap-6 md:gap-0 gap-6 md:shadow-xl shadow-sm xl:p-7 md:p-0 p-5 bg-white cursor-pointer`}
-            initial={isTablet ? { scale: 0.8 } : { opacity: 0, y: 100 }}
-            animate={
-              isTablet ? { scale: 1 } : isMobile ? {} : { y: 0, opacity: 1 }
-            }
-            whileInView={isMobile ? { opacity: 1, y: 0 } : {}}
-            transition={{
-              type: "spring",
-              bounce: 0.4,
-              duration: 0.9,
-              delay: isTablet ? index * 0.5 : index * 0.1,
-            }}
-            viewport={{ once: true, amount: 0.2 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 1.05 }}
             onMouseEnter={() => setHoveredIndex(index)}
