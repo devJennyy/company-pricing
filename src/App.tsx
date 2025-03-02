@@ -8,14 +8,14 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <>
       <Navbar />
       <Hero />
       <FeaturedWebsites />
       <FeaturesAndBenefits />
       <ServicesOffered />
       <Footer />
-    </div>
+    </>
   );
 }
 
